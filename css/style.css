@@ -1,0 +1,100 @@
+body {
+    font-size: 1.5em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    max-width: 90%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 1px 1px 10px rgba(0,0,0, 0.6);
+    border: 2px solid orange;
+}
+
+.contant-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFE4C4;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 1rem;
+}
+
+
+
+
+.info-container > * {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+@media screen and (width > 500px) {
+    .info-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .contact {
+        max-width: 50%;
+        /* border: 2px solid black; */
+        padding: 0.5rem;
+    }
+    .company-info {
+        max-width: 50%;
+        /* border: 2px solid black; */
+    }
+    .slogan {
+        font-size: smaller;
+    }
+}
+
+@media screen and (width > 769px) {
+    .contant-card {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 1rem;
+        margin: 1rem;
+        justify-content: space-around;
+        max-width: 900px;
+    }
+    
+
+    .info-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .info-container > * {
+        min-width: 100%;
+    }
+}
+
+.name {
+    font-weight: 400;
+}
+
+.title {
+    font-weight: 300;
+}
+
+.phone {
+    font-weight: 300;
+}
+.company {
+    font-weight: 800;
+}
+
+.slogan {
+    font-size: 0.9em;
+    font-weight: 300;
+    font-style: italic;
+}
+
+
